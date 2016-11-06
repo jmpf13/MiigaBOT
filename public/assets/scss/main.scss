@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{ z-index: 1 }
+
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-image: url( '../images/background.jpg' );
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Open Sans', sans-serif;
+	color: #FFF;
+
+	&.mobile{
+		background-image: none;
+	}
+
+	&:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba( 102, 45, 145, 0.56 );
+		z-index: 0;
+	}
+}
+
+.full-height{
+	position: relative;
+	height: 100% !important;
+	z-index: 1;
+}
+
+#historico{
+	& span{
+		text-align: center;
+		font-size: 24px;
+		display: block;
+		width: 100%;
+		color: rgba( 255, 255, 255, 0.8 );
+
+		&.text-big{
+			font-size: 36px;
+			font-weight: 700;
+			color: rgba( 255, 255, 255, 1 );
+		}
+	}
+}
+
+img#logo{
+	margin: 15px auto;
+	display: block;
+	max-width: 100%;
+}
+
+div#historico{
+
+}
+
+form#talk_bot{
+	width: 50%;
+	height: 50%;
+	position: absolute;
+	top: 300px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+
+	& input[ type="text" ]{
+		height: 50px;
+		width: 100%;
+		background: none;
+		border: 0;
+		border-bottom: 3px solid rgba( 102, 45, 145, 1 );
+		font-size: 24px;
+		text-align: center;
+	}
+
+	& button {
+		border: 1px  solid darken( rgba( 102, 45, 145, 1 ), 10% );
+		height: 40px;
+		width: 100px;
+		background-color: rgba( 102, 45, 145, 1 );
+		border-radius: 5px;
+		margin: 20px auto;
+		display: block;
+		transition: all ease 0.3s;
+		text-transform: uppercase;
+
+		&:hover{
+			background: lighten( rgba( 102, 45, 145, 1 ), 10% );
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"name": "NodejsStarterApp",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node app.js"
+	},
+	"dependencies": {
+		"body-parser": "^1.15.2",
+		"cf-deployment-tracker-client": "*",
+		"watson-developer-cloud": "*",
+		"vcap_services": "*",
+		"cfenv": "^1.0.3",
+		"commander": "^2.6.0",
+		"express": "~4.x",
+		"http-post": "^0.1.1",
+		"http-proxy": "^1.8.1",
+		"mongodb": "^2.2.9",
+		"ogg": "*"
+	},
+	"devDependencies": {
+		"browser-sync": "^2.14.3",
+		"gulp": "^3.9.1",
+		"gulp-autoprefixer": "^3.1.1"
+	},
+	"repository": {},
+	"engines": {
+		"node": "4.x"
+	}
+}

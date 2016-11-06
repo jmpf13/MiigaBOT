@@ -1,0 +1,9 @@
+<img id="logo" src="assets/images/logo.png" alt="Logo" width="350">
+<div id="historico">
+	<span ngClass="{ 'text-big': $last == true}" ng-bind-html="text"  ng-repeat="text in text_bot track by $index"></span>
+</div>
+<audio id="myAudioElement" src="assets/audio/transcript.wav" style="display: hidden;" type="audio/wav" />
+<form id="talk_bot">
+	<input type="text" name="send_bot" id="send_bot">
+	<button type="submit">Enviar</button>
+</form>
